@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Task scheduler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="assets/css/mdb.min.css" rel="stylesheet">
+  <link href="assets/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Task scheduler</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Add task <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pomodoro.html">Pomodoro Technique</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 card">
+        <h5 class="card-header subtitle">Add task</h5>
+        <form class="card-body">
+          <div class="form-group">
+            <label for="taskid">Task name</label>
+            <input type="email" class="form-control" id="taskid" placeholder="Write an essay">
+          </div>
+          <div class="form-group">
+            <label for="relevance">Relevance</label>
+            <select class="form-control" id="relevance">
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="date-input" class="col-4 col-form-label">Initial Date</label>
+            <div class="col-8">
+              <input class="form-control" type="date" id="date-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="duration">Estimated time (minutes)</label>
+            <input type="number" value="15" min="0" max="1000" step="15">
+          </div>
+          <div class="submit-button">
+            <button type="submit" class="btn btn-primary">Add task</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6 card">
+        <h5 class="card-header subtitle">Your tasks</h5>
+        <table class="table table-hover card-body">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Relevance</th>
+              <th scope="col">Initial date</th>
+              <th scope="col">Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Write essay</td>
+              <td>High</td>
+              <td>11/05/2020</td>
+              <td>30 minutes</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Buy domain</td>
+              <td>Low</td>
+              <td>11/05/2020</td>
+              <td>15 minutes</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Math homework</td>
+              <td>Medium</td>
+              <td>11/05/2020</td>
+              <td>60 minutes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://github.com/daorejuela1"> daorejuela1</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="assets/js/addons/datatables.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script src="assets/js/spinner.js"></script>
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/javascript.js"></script>
+</body>
+
+</html>
